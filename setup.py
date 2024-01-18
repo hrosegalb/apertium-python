@@ -27,7 +27,7 @@ def install_binaries() -> None:
         apertium.installer.nightly = True
         if platform.system() == 'Linux':
             ubuntu._install_package_source()
-    kaz_tat_install()
+    # kaz_tat_install()
 
     apertium.installer.install_wrapper('python3-apertium-core')
     apertium.installer.install_wrapper('python3-apertium-lex-tools')
