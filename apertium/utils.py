@@ -193,7 +193,6 @@ def parse_mode_file(mode_path: str) -> List[List[str]]:
             # modes.xml instead; this is brittle (what if a path
             # has | or ' in it?)
             # cmd = cmd.replace('$2', '').replace('$1', '-g')
-            cmd = cmd.replace('$2', '')
             commands.append([c.strip("'") for c in cmd.split()])
         return commands
     else:
