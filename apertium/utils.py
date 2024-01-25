@@ -192,7 +192,7 @@ def parse_mode_file(mode_path: str) -> List[List[str]]:
             # TODO: we should make language pairs install
             # modes.xml instead; this is brittle (what if a path
             # has | or ' in it?)
-            # cmd = cmd.replace('$2', '').replace('$1', '-g')
+            cmd = cmd.replace('$2', '').replace('$1', '-g')
             commands.append([c.strip("'") for c in cmd.split()])
         return commands
     else:
